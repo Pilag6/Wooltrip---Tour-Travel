@@ -1,0 +1,77 @@
+.top-destinations {
+  width: 100%;
+  padding-bottom: 30px;
+  background: var(--whity);
+  margin-top: 60px;
+  margin-bottom: 60px;
+  
+}
+
+.top-destinations .top-h2 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+}
+
+
+.top-destinations__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-destinations__cards {
+  width: 200px;
+  height: auto;
+  text-align: center;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  background-color: var(--yellowy);
+  transition: transform .4s;
+  
+}
+
+.top-destinations__cards:hover {
+  transform: scale(1.07);
+}
+
+.top-destinations__cards img {
+  /* width: 200px;
+  height: auto; */
+  border-bottom: 2px dashed var(--blacky);
+}
+
+.top-destinations__cards .top_h3 {
+  margin-top: 10px;
+  font-family: var(--font2);
+  font-size: 30px;
+  color: var(--greeny);
+}
+.top-destinations__cards .top-tours {
+  margin: 10px 0 20px 0;
+  display: block;
+  color: var(--blacky);
+}
+
+.top-destinations__cards .fa-ticket-alt {
+  position: absolute;
+  top:5px;
+  left: 10px;
+  font-size: 20px;
+  color: var(--whity);
+}
+
+.top-destinations__cards .fa-heart {
+  position: absolute;
+  top:5px;
+  right: 10px;
+  font-size: 30px;
+  color: var(--redy);
+}

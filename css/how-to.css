@@ -1,0 +1,49 @@
+.how-to {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--greyy);
+}
+
+.how-to__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 70px 0;
+}
+
+
+.how-to__cards {
+ margin: 0 40px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ width: 300px;
+ text-align: center;
+
+}
+
+.how-to__cards img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 20px;
+  
+}
+
+.how-to__cards h3 {
+  font-family: var(--font2);
+  font-size: 40px;
+  color: var(--blacky);
+  margin-bottom: 20px;
+}
+
+.how-to__cards p {
+  font-family: var(--font1);
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+

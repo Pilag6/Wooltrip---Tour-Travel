@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --blacky: #1a535c;
+  --greeny: #31afb4;
+  --whity: #f7fff7;
+  --greyy: #d4d4d4;
+  --redy: #ff6b6b;
+  --yellowy: #ffe66d;
+  --font1: 'Roboto', sans-serif;
+  --font2: 'Rancho', cursive;
+}
+
+img {
+  max-width: 100%;
+  /* Esto las hace responsive de acuerdo a su contenedor. Las img son elementos inline, a veces conviene ponerle display: block; cuando tienen un background color. */
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+
+}
+
+
+body {
+  background: var(--whity);
+  font-family: 'Roboto', sans-serif;
+}
+
+i {
+  font-family: var(--font1);
+}
+
+.fa-star,
+.fa-star-half-alt {
+  color:goldenrod;
+}
+
+h2 {
+  font-size: 30px;
+  margin-left: 10px;
+}
+

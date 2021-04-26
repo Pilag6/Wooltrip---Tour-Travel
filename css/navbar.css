@@ -1,0 +1,257 @@
+header,
+.navbar,
+.navbar__languages,
+.navbar__logo,
+.navbar__search--icon {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  position: relative;
+  background-color: var(--greeny);
+  width: 100%;
+  justify-content: center;
+  
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  top: 0px;
+  z-index: 99;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-around;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
+  background-color: transparent;
+  backdrop-filter: blur(25px);
+  
+}
+
+.navbar__logo {
+  font-family: 'Rancho', cursive;
+  font-size: 40px;
+  justify-content: space-between;
+
+}
+
+.navbar__logo a {
+  color: var(--yellowy);
+  text-shadow: 2px 2px 5px var(--blacky);
+}
+
+.navbar__logo i {
+  color: var(--blacky);
+  background-color: var(--yellowy);
+  font-size: 16px;
+  margin-left: 30px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid var(--yellowy);
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.navbar__logo i span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-left: 10px;
+
+}
+
+.navbar__logo i:hover {
+  background: var(--whity);
+  color: var(--redy);
+  border: 1px solid var(--redy);
+}
+
+.navbar__search {
+  width: 45%; 
+
+}
+
+.search-box {
+  display: none;
+}
+
+.navbar__search--input {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, .12);
+
+}
+
+input {
+  color: var(--blacky);
+  background: var(--whity);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, .1);
+}
+
+.navbar__search--icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--whity);
+  background: var(--blacky);
+  height: 45px;
+  width: 55px;
+  line-height: 55px;
+  font-size: 20px;
+  justify-content: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+
+.navbar__languages {
+  font-size: 20px;
+  color: var(--whity);
+
+}
+
+.navbar__languages--flag,
+.navbar__languages--currency {
+  margin-right: 20px;
+}
+
+.just__search a {
+  font-size: 25px;
+  color: var(--whity);
+
+}
+.just__search i{
+  margin-right: 30px;
+  margin-left: 20px;
+  
+}
+
+.navbar__languages--help i span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: var(--whity);
+}
+
+/* MENÚ HAMBURGUESA */
+
+.nav__hamburger {
+  /* position: absolute;
+  top: 25px;
+  right: 20px; */
+  width: 40px;
+  padding: 0 5px;
+  cursor: pointer;
+  display: none;
+
+}
+
+.nav__hamburger span {
+  background: var(--whity);
+  width: 30px;
+  height: 3px;
+  display: block;
+  border-radius: 50px;
+  transition: 300ms linear all;
+}
+
+.nav__hamburger span:nth-child(1),
+.nav__hamburger span:nth-child(3) {
+  width: 20px;
+  margin: 0 auto;
+}
+
+.nav__hamburger span:nth-child(2) {
+  margin: 6px 0;
+  width: 30px;
+}
+
+.nav__hamburger:hover span:nth-child(1),
+.nav__hamburger:hover span:nth-child(3) {
+  width: 30px;
+}
+
+
+/* *****STICKY MENU ***** */
+
+.navbar.sticky {
+  width: 100%;
+  position: fixed;
+  background-color: var(--greeny);
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
+  animation-name: animationFade;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  justify-content: space-around;
+}
+
+.navbar.sticky .search-box {
+  display: flex;
+  
+}
+
+.navbar.sticky .just__search {
+  display: none;
+}
+
+
+@keyframes animationFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+  }
+}
+
+
+/* BREACKING POINTS */
+
+@media (max-width: 576px) {
+  
+  .navbar,
+  .navbar.navbar.sticky {
+    justify-content: space-between;
+  }
+  
+  .navbar__logo i,
+  .navbar__languages--help,
+  .navbar.sticky .search-box {
+    display: none;
+  }
+
+  .nav__hamburger {
+    display: block;
+  }
+
+  .just__search {
+    margin-right: 0;
+  }
+
+  .navbar.sticky .just__search,
+  .just__search {
+    display: flex;
+  }
+
+  .navbar__languages--flag,
+  .navbar__languages--currency {
+    margin-right: 12px;
+  }
+  
+}
